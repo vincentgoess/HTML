@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Meine Visitenkarte</title> <!-- Titel der Webseite -->
+    <style>
+        /* Grundlayout der Seite */
+        body {
+            background-color: #e0f7fa; /* Hintergrundfarbe */
+            display: flex; /* Flexbox Layout */
+            justify-content: center; /* Zentrieren horizontal */
+            align-items: center; /* Zentrieren vertikal */
+            height: 100vh; /* Volle Höhe des Viewports */
+            margin: 0; /* Kein Außenabstand */
+            font-family: Arial, sans-serif; /* Schriftart */
+        }
+
+        /* Stil der Visitenkarte */
+        .karte {
+            background-color: #00796b; /* Hintergrund der Karte */
+            color: white; /* Textfarbe */
+            padding: 20px; /* Innenabstand */
+            border-radius: 20px; /* Abgerundete Ecken */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Schatten */
+            width: 400px; /* Breite der Karte */
+            text-align: center; /* Text zentriert */
+        }
+
+        /* Stil für den Namen */
+        .name {
+            font-size: 2em; /* Schriftgröße */
+            margin-bottom: 10px; /* Abstand nach unten */
+        }
+
+        /* Stil für Beschreibungsliste */
+        .beschreibung {
+            text-align: left; /* Linksbündiger Text */
+            margin-bottom: 15px; /* Abstand nach unten */
+        }
+
+        /* Stil für Handynummer */
+        .handynummer {
+            font-weight: bold; /* Fettschrift */
+            color: #ffeb3b; /* Gelbe Farbe */
+        }
+
+        /* Stil für das Bild */
+        img {
+            width: 100px; /* Breite des Bildes */
+            height: 100px; /* Höhe des Bildes */
+            border-radius: 50%; /* Rundes Bild */
+            margin-bottom: 15px; /* Abstand nach unten */
+            transform: rotate(10deg); /* leicht gedreht */
+        }
+
+        /* Stil für Video */
+        video {
+            width: 100%; /* Volle Breite */
+            margin-top: 15px; /* Abstand nach oben */
+            transform: rotate(-5deg); /* leicht gegenläufig gedreht */
+        }
+    </style>
+</head>
+<body>
+    <div class="karte">
+        <!-- Profilbild -->
+        <img src="https://via.placeholder.com/100" alt="Profilbild">
+        
+        <!-- Name -->
+        <div class="name">Lisa Beispiel</div>
+        
+        <!-- Beschreibungsliste -->
+        <div class="beschreibung">
+            <ul>
+                <li>Webdesign</li>
+                <li>Grafikgestaltung</li>
+                <li>Marketingberatung</li>
+            </ul>
+        </div>
+        
+        <!-- Handynummer -->
+        <div class="handynummer">📞 +49 987 654 3210</div>
+        
+        <!-- Video -->
+        <video src="beispielvideo.mp4" controls></video>
+    </div>
+</body>
+</html>
