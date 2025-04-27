@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitenkarten</title>
+    <style>
+        body {
+            background: #f0f0f0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Mitarbeiterkarte (Dreieck) */
+        .mitarbeiter {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 180px solid #4caf50; /* grün */
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .mitarbeiter-content {
+            position: absolute;
+            top: 50px;
+            left: -80px;
+            width: 160px;
+        }
+
+        /* Arbeitgeberkarte (Kreis) */
+        .arbeitgeber {
+            background: #2196f3; /* blau */
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mitarbeiter">
+        <div class="mitarbeiter-content">
+            <strong>Max Mitarbeiter</strong><br>
+            Entwickler<br>
+            📞 0123 456789
+        </div>
+    </div>
+
+    <div class="arbeitgeber">
+        <strong>Firma AG</strong><br>
+        Softwarelösungen<br>
+        📞 0987 654321
+    </div>
+
+</body>
+</html>
