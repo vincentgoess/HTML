@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitenkarte</title>
+    <style>
+        /* Hier beginnt der CSS-Block, der das Design und Layout der Webseite definiert */
+        body {
+            /* Zentriert die gesamte Seite horizontal und vertikal */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Höhe des Sichtfensters */
+            margin: 0; /* Entfernt Abstände am Rand */
+            font-family: Arial, sans-serif; /* Schriftart der Seite */
+            background-color: #f0f0f0; /* Hellgrauer Hintergrund */
+        }
+
+        .visitenkarte {
+            /* Gestaltet das Erscheinungsbild der Visitenkarte */
+            background-color: #4caf50; /* Grüner Hintergrund */
+            color: white; /* Weiße Schriftfarbe */
+            padding: 20px; /* Abstand innerhalb der Karte */
+            border-radius: 10px; /* Abgerundete Ecken */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+            text-align: center; /* Zentrierter Text */
+            width: 350px; /* Breite der Karte */
+        }
+
+        .name {
+            /* Stil für den Namen auf der Karte */
+            font-size: 1.5em; /* Große Schriftgröße */
+            font-weight: bold; /* Fettschrift */
+            margin-bottom: 10px; /* Abstand nach unten */
+        }
+
+        .beschreibung {
+            /* Stil für den Beschreibungsbereich */
+            font-size: 1em; /* Standard-Schriftgröße */
+            line-height: 1.5; /* Zeilenabstand für bessere Lesbarkeit */
+            text-align: left; /* Text wird linksbündig ausgerichtet */
+        }
+
+        .beschreibung ul {
+            /* Liste der Stichpunkte */
+            padding-left: 20px; /* Einrückung der Liste */
+        }
+
+        .beschreibung li {
+            /* Einzelne Punkte der Liste */
+            white-space: nowrap; /* Verhindert Zeilenumbrüche innerhalb der Punkte */
+        }
+
+        .handynummer {
+            /* Stil für die Telefonnummer */
+            margin-top: 15px; /* Abstand nach oben */
+            font-size: 1em; /* Standard-Schriftgröße */
+            font-weight: bold; /* Fettschrift für Hervorhebung */
+        }
+    </style>
+</head>
+<body>
+    <div class="visitenkarte">
+        <!-- Name des Finanzdienstleisters -->
+        <div class="name">Max Mustermann</div>
+
+        <!-- Beschreibung der Aufgaben in einer Liste -->
+        <div class="beschreibung">
+            <ul>
+                <li>Beratung bei finanziellen Entscheidungen</li>
+                <li>Unterstützung bei der Vermögensplanung</li>
+                <li>Absicherung durch Versicherungen</li>
+                <li>Hilfe bei Investments zur Erreichung finanzieller Ziele</li>
+            </ul>
+        </div>
+
+        <!-- Telefonnummer für Kontakt -->
+        <div class="handynummer">📞 +49 123 456 7890</div>
+    </div>
+</body>
+</html>
